@@ -1,9 +1,9 @@
 # TailwindCSS ProJect Repository
 
-### This repo is mainly for **Tailwindcss** personal project related [@omathdevelop]() tailwindcss personal related ProJect. 
+### This repo is mainly for **Tailwindcss** personal project related [@omathdevelop](https://github.com/omathdevelop) tailwindcss personal related ProJect. 
 
-## TailwindCSS ProJect Backend Technologies [Python]() & [Django]()
-### Later on would be implementing a **Back end** using **Python & Django** Programming Languages
+## TailwindCSS ProJect Backend Technologies [Python](https://www.python.org) & [Django](https://www.djangoproject.com)
+### Later on would be implementing a **Backend** using **Python & Django** Programming Languages
 
 ## Table Of Content  
 - Exporing Tailwindcss _docs_ to improve my knowledge of *tailwindcss* [learn more]()
