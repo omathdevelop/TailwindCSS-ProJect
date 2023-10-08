@@ -12,43 +12,83 @@
 
 </head>
 
-<body>
+<body >
     <div class="flex flex-col space-y-4 justify-center relative top-0 left-0 max-w-full">
-        <h1  class="text-blue-200 text-center font-serif font-medium first-letter:text-fuchsia-500">Exploring TailwindCSS</h1>
+        <h1 class="text-blue-200 order-first text-center font-serif font-medium first-letter:text-fuchsia-500">Exploring TailwindCSS
+        </h1>
         <div class="columns-3 md:hidden gap-x-4 w-2/4">
             <p class=" text-blue-400 text-center w-max p-4 bg-blue-500 rounded-full ">One</p>
             <p class=" text-blue-400 text-center w-max p-4 bg-blue-500 rounded-full ">Second</p>
             <p class=" text-blue-400 text-center w-max p-4 bg-blue-500 rounded-full ">Third</p>
         </div>
-        <span class="box-decoration-slice bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-2 w-max selection:text-blue-800">
-            Hello <br/>
+        <span
+            class="box-decoration-slice bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-2 w-max selection:text-blue-800">
+            Hello <br />
             World
         </span>
     </div>
     <div class="grid grid-cols-5 md:grid-cols-2 gap-2 mt-3 md:block">
-        <div class="bg-violet-500 h-12"></div>
+        <div class="bg-violet-500 justify-end h-12"></div>
         <div class="bg-violet-500 h-12 "></div>
         <div class="bg-violet-500 h-12 "></div>
         <div class="bg-violet-500 h-12 "></div>
         <div class="bg-violet-500 h-12 "></div>
     </div>
-      
-    <button class="p-2 mt-2 ml-2 rounded-lg text-white bg-fuchsia-400 text-lg font-normal line-clamp-3 hover:bg-fuchsia-500 focus:bg-blue-400 active:bg-slate-700 active:scale-105 focus:ring-2 ring-blue-600">click me</button>
-    
+
+    <button
+        class="p-2 mt-2 ml-2 rounded-lg text-white bg-fuchsia-400 text-lg font-normal line-clamp-3 hover:bg-fuchsia-500 focus:bg-blue-400 active:bg-slate-700 active:scale-105 focus:ring-2 ring-blue-600">click
+        me</button>
+
     <ul class="mt-2 p-1 space-y-3">
-     <li class="ml-4 p-2 first:bg-slate-400 hover:bg-slate-500 w-max">Item One</li>
-     <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Two</li>
-     <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Three</li>
-     <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Four</li>
-     <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Five</li>
+        <li class="ml-4 p-2 first:bg-slate-400 hover:bg-slate-500 w-max">Item One</li>
+        <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Two</li>
+        <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Three</li>
+        <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Four</li>
+        <li class="ml-4 p-2 odd:bg-blue-500 even:bg-pink-600 w-max">Item Five</li>
     </ul>
 
-    <div class="m-10 rounded-lg bg-white shadow-xl ring-1 ring-slate-500">
+    <div class="m-10 rounded-lg bg-white dark:bg-black shadow-xl ring-1 ring-slate-500">
         <h2 class="text-base font-medium tracking-tight text-slate-500">This is a an element</h2>
-        <p class="mt-2">This is exactly what you call real me</p>
-        <button onclick="document.body.classList.toggle('dark')" id="toggleDark" class="text-blue-600 px-4 py-2 text-sm font-medium mt-4 bg-blue-100 rounded-md">
-           toggleDark
+        <p class="mt-2">This is exactly what you call real me <span class="ordinal">1st</span></p>
+        <button onclick="document.body.classList.toggle('dark')" id="toggleDark"
+            class="text-blue-600 px-4 py-2 text-sm font-medium mt-4 bg-blue-100 rounded-md">
+            toggleDark
         </button>
     </div>
+    <div class="overflow-y-scroll overscroll-auto italic  md:oversroll-contain bg-slate-950 p-4 max-h-20 rounded-lg m-4 text-white   border-slate-200 border-solid border-4">
+        Lorem Ipsum is simply dummy text of the printing and
+        typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into
+        electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset
+        sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+        Aldus PageMaker including versions of Lorem Ipsum.
+    </div>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", () => {
+          const toggleDark = document.getElementById('toggleDark')
+          toggleDark.addEventListener('click', function() {
+            if(document.documentElement.classList.contains('dark')) {
+              document.documentElement.classList.remove('dark')
+            }
+            else {
+              document.documentElement.classList.add('dark')
+            }
+            alert("click!")
+          });
+        });
+      </script>
 </body>
+
 </html>
