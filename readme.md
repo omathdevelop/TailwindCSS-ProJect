@@ -12,5 +12,5 @@
 - Putting everything together to build a tiny ProJect that will includes a **Web ProGressive App** features that of course, would be power by **Service Worker, Caching API, IndexDB & Storage API**. 
   
 ## ProJect Catalogs 
-- Offer Web Application Frontend Development Using Pure __Taliwindcss__
+- Offer Web Application Frontend Development Using Pure __Taliwindcss__ and __ReactJS__ to build a better user interface
 - 
